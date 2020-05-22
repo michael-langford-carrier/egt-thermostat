@@ -141,5 +141,5 @@ if test "x$enable_lto" = "xyes" ; then
   CXXFLAGS="$CXXFLAGS -flto"
 fi
 
-AC_CONFIG_FILES([Makefile external/Makefile])
+AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
