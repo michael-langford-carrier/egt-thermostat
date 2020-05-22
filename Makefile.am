@@ -1,5 +1,3 @@
-SUBDIRS = external
-
 AUTOMAKE_OPTIONS = subdir-objects
 
 CUSTOM_CXXFLAGS = $(WARN_CFLAGS) \
