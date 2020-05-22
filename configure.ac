@@ -116,6 +116,9 @@ if test -z "$NO_GETTEXT"; then
     test -n "$LIBC_CONTAINS_LIBINTL" || LIBS="$LIBS -lintl"
 fi
 
+PKG_CHECK_MODULES(LIBEGT, [libegt >= 1.0-rc2], [], [
+   AC_MSG_ERROR(libegt not found.  This is required.)
+])
 
 AC_ARG_WITH([sensors],
     AS_HELP_STRING([--without-sensors], [Ignore presence of sensors and disable it]))
