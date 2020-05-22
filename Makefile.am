@@ -4,6 +4,7 @@ CUSTOM_CXXFLAGS = $(WARN_CFLAGS) \
 	-I$(top_srcdir)/src \
 	$(LIBEGT_CFLAGS)
 
+CUSTOM_LDADD = $(LIBEGT_LIBS)
 
 AM_CXXFLAGS = -DDATADIR=\"$(datadir)\"
 
